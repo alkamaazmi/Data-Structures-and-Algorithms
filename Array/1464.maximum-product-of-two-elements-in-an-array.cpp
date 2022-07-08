@@ -1,25 +1,30 @@
 /*
- * @lc app=leetcode id=1464 lang=cpp
- *
- * [1464] Maximum Product of Two Elements in an Array
+ * leetcode [1464] Maximum Product of Two Elements in an Array
+ * you will choose two different indices i and j of that array. Return the maximum value of (nums[i]-1)*(nums[j]-1).
  */
 
-// @lc code=start
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
-        int firstlargest=INT_MIN;
-        int secondlargest=INT_MIN;
-        for(int i=0;i<nums.size();i++){
-            if(nums[i]>firstlargest){
-                secondlargest=firstlargest;
-                firstlargest=nums[i];
-            }else if(nums[i]!=firstlargest&&nums[i]>secondlargest){
-                secondlargest=nums[i];
+        int max1 = INT_MIN;//largest number
+        int flag = 0;
+        for(int i = 0;i<nums.size();i++){
+            if(max1 < nums[i]){
+                max1 = nums[i];
+                flag = i;
             }
         }
-        return firstlargest*secondlargest;
+        int max2=  INT_MIN;//second largest number
+        for(int i = 0;i< nums.size();i++){
+            //equality holds as max1 = max2 can be possible
+            if(nums[i] > max2 && i != flag)
+            {
+                 max2 = nums[i];
+            } 
+        }
+        
+        return (max2 - 1) * (max1 - 1);
     }
 };
-// @lc code=end
-
+//Time Complexity: O(N)
+//Space Complexity: O(1)
