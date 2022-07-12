@@ -14,7 +14,7 @@ public:
         return (a-b)/t;
     }
 };
-// Fn = {[(√5 + 1)/2] ^ n} / √5 
+// F(n) = ((1+sqrt(5))^n - (1-sqrt(5))^n)/(2^n * sqrt(5))
 // Time Complexity: O(logn), this is because calculating phi^n takes logn time
 // Space Complexity: O(1)
 
