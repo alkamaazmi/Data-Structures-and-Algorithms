@@ -1,5 +1,5 @@
 /*
- * [1331] Rank Transform of an Array
+ * Leetcode [1331] Rank Transform of an Array
  * Given an array of integers arr, replace each element with its rank.
  * Rank is an integer starting from 1.
  * The larger the element, the larger the rank. If two elements are equal, their rank must be the same.

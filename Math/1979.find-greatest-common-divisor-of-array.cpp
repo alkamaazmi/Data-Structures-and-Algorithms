@@ -1,5 +1,5 @@
 /*
- * leetcode [1979] Find Greatest Common Divisor of Array
+ * Leetcode [1979] Find Greatest Common Divisor of Array
  * Given an integer array nums, return the greatest common divisor of the smallest number and largest number in nums
  */
 

@@ -1,5 +1,5 @@
 /*
- * leetcode [507] Perfect Number
+ * Leetcode [507] Perfect Number
  * Given an integer n, return true if n is a perfect number, otherwise return false.
  * A perfect number is a positive integer that is equal to the sum of its positive divisors, excluding the number itself.
  */

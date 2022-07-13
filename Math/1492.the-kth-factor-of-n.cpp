@@ -1,5 +1,5 @@
 /*
- * [1492] The kth Factor of n
+ * Leetcode [1492] The kth Factor of n
  * Consider a list of all factors of n sorted in ascending order, return the kth factor in this list or return -1 if n has less than k factors.
  */
 
