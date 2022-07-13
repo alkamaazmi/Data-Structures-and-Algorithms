@@ -1,5 +1,5 @@
 /*
- * [27] Remove Element
+ * Leetcode [27] Remove Element
  * Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The relative order of the elements may be changed.
  * the first k elements of nums should hold the final result
  * Return k after placing the final result in the first k slots of nums.
