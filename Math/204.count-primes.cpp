@@ -1,5 +1,5 @@
 /*
- * leetcode [204] Count Primes
+ * Leetcode [204] Count Primes
  * Given an integer n, return the number of prime numbers that are strictly less than n
  */
 
