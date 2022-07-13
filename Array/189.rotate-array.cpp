@@ -1,5 +1,6 @@
-/* leetcode 189.rotare-array
-  rotate the array right by k steps
+/* 
+* Leetcode 189.rotare-array
+* rotate the array right by k steps
 */
 class Solution {
 public:
