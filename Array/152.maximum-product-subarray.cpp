@@ -1,6 +1,6 @@
 /*
-*leetcode [152] Maximum Product Subarray
-*find a contiguous non-empty subarray within the array that has the largest product, and return the product.
+* Leetcode [152] Maximum Product Subarray
+* find a contiguous non-empty subarray within the array that has the largest product, and return the product.
 */
 class Solution {
 public:
