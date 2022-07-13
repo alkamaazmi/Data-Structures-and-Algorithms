@@ -1,5 +1,6 @@
-/*leetcode 53.Maximum Subarray
-find the contiguous subarray (containing at least one number) which has the largest sum 
+/*
+* Leetcode 53.Maximum Subarray
+* find the contiguous subarray (containing at least one number) which has the largest sum 
 */
 //Solution using  Kadane Algorithm
 class Solution {
