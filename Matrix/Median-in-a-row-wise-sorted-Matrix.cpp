@@ -7,7 +7,7 @@
 
 class Solution{   
 public:
-    int smallerThanMid(vector<int> &row,int c,int mid){
+    int smallerThanOrEqualToMid(vector<int> &row,int c,int mid){
         int low=0;
         int high=c-1;
         while(low<=high){
@@ -27,7 +27,7 @@ public:
             int mid=low+(high-low)/2;
             int count=0;
             for(int i=0;i<r;i++){
-                count+=smallerThanMid(matrix[i],c,mid);
+                count+=smallerThanOrEqualToMid(matrix[i],c,mid);
             }
             if(count<=(r*c)/2){
                 low=mid+1;
