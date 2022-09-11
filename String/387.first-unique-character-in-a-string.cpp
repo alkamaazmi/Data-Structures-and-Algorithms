@@ -7,9 +7,7 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
-
         int v[26]={0};
-
         for(char c : s) {
             v[c - 'a']++;
         }
@@ -21,4 +19,6 @@ public:
     }
 };
 
+// Time Complexity : O(N)
+// Space Complexity : O(1)
 
