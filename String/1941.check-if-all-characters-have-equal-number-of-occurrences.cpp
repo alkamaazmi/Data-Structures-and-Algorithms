@@ -8,7 +8,7 @@
 class Solution {
 public:
     bool areOccurrencesEqual(string s) {
-         int a[26]={0};
+        int a[26]={0};
         for(auto i:s){
             a[i-'a']++;
         }
@@ -21,5 +21,10 @@ public:
         return true;
     }
 };
+
+// Time Complexity : O(N)
+// Space Complexity : O(1)
+
+
 
 
