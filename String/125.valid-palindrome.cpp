@@ -13,7 +13,7 @@ public:
         }
         return false;
     }
-    char toupper(char ch){
+    char tolower(char ch){
         if((ch<='z'&&ch>='a')||(ch<='9'&&ch>='0')){
             return ch;
         }else{
@@ -21,16 +21,16 @@ public:
         }
     }
     bool isPalindrome(string s) {
-         for(int i=0;i<s.size();i++){
+        for(int i=0;i<s.size();i++){
            if(valid(s[i])){
                continue;
-           }else{
+            }else{
                s.erase(i,1);
                i=i-1;
-           }
-       }
+            }
+        }
         for(int i=0;i<s.size();i++){
-            s[i]=toupper(s[i]);
+            s[i]=tolower(s[i]);
         }
         int start=0,end=s.size()-1;
         while(start<end){
