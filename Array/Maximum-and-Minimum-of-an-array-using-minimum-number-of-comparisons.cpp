@@ -1,95 +1,47 @@
-//Maximum and minimum of an array using minimum number of comparisons
+/*
+ * GeeksForGeeks : Maximum and minimum of an array using minimum number of comparisons
+ */
 
-#include<iostream>
-using namespace std;
-
-// Structure is used to return two values 
-struct Pair
-{
-	int min;
-	int max;
-};
-
-struct Pair getMinMax(int arr[], int n)
-{
-	struct Pair minmax;	
-	int i;
-	
-	// If array has even number of elements
-	// then initialize the first two elements
-	// as minimum and maximum
-	if (n % 2 == 0)
-	{
-		if (arr[0] > arr[1])	
-		{
-			minmax.max = arr[0];
-			minmax.min = arr[1];
-		}
-		else
-		{
-			minmax.min = arr[0];
-			minmax.max = arr[1];
-		}
-		
-		// Set the starting index for loop
-		i = 2;
-	}
-	
-	// If array has odd number of elements
-	// then initialize the first element as
-	// minimum and maximum
-	else
-	{
-		minmax.min = arr[0];
-		minmax.max = arr[0];
-		
-		// Set the starting index for loop
-		i = 1;
-	}
-	
-	// In the while loop, pick elements in
-	// pair and compare the pair with max
-	// and min so far
-	while (i < n - 1)
-	{		
-		if (arr[i] > arr[i + 1])		
-		{
-			if(arr[i] > minmax.max)	
-				minmax.max = arr[i];
-				
-			if(arr[i + 1] < minmax.min)		
-				minmax.min = arr[i + 1];	
-		}
-		else	
-		{
-			if (arr[i + 1] > minmax.max)	
-				minmax.max = arr[i + 1];
-				
-			if (arr[i] < minmax.min)		
-				minmax.min = arr[i];	
-		}
-		
-		// Increment the index by 2 as
-		// two elements are processed in loop
-		i += 2;
-	}		
-	return minmax;
-}
-
-int main()
-{
-	int arr[] = { 1000, 11, 445,
-				1, 330, 3000 };
-	int arr_size = 6;
-	
-	struct Pair minmax = getMinMax(arr, arr_size);
-	
-	cout << "nMinimum element is "
-		<< minmax.min << endl;
-	cout << "nMaximum element is "
-		<< minmax.max<<endl;
-		
-	return 0;
+pair<long long, long long> getMinMax(long long a[], int n) {
+   if(n==1){
+       return {a[0],a[0]};
+   }
+   pair<long long,long long> minmax;
+   int i=0;
+   if(n%2==0){
+       if(a[i]<a[i+1]){
+           minmax.first=a[i];
+           minmax.second=a[i+1];
+       }else{
+           minmax.first=a[i+1];
+           minmax.second=a[i];
+       }
+       i+=2;
+   }else{
+       minmax.first=a[i];
+       minmax.second=a[i];
+       i+=1;
+   }
+   while(i<n-1){
+       if(a[i]<a[i+1]){
+           if(a[i]<minmax.first){
+               minmax.first=a[i];
+           }
+           if(a[i+1]>minmax.second){
+               minmax.second=a[i+1];
+           }
+       }else{
+           if(a[i]>minmax.second){
+               minmax.second=a[i];
+           }
+           if(a[i+1]<minmax.first){
+               minmax.first=a[i+1];
+           }
+       }
+       i++;
+   }
+   return minmax;
+   
 }
 
 // Time Complexity: O(n)
