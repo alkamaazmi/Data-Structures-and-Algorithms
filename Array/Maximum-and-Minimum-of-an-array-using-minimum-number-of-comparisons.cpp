@@ -38,7 +38,7 @@ pair<long long, long long> getMinMax(long long a[], int n) {
                minmax.first=a[i+1];
            }
        }
-       i++;
+       i+=2;
    }
    return minmax;
    
