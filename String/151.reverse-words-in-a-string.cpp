@@ -73,7 +73,7 @@ public:
         return s;
     }
 };
-// Time Complexity - O(N)
+// Time Complexity - O(N*N)
 // Space Complexity - O(1)
 
 /* using stack */
