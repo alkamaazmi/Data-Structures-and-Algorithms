@@ -25,7 +25,6 @@ public:
     }
 };
 
-//Time complexity is O(n)
-//space comlexity is O(1)
-
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 
