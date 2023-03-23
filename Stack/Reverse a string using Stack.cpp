@@ -17,5 +17,3 @@ char* reverse(char *S, int len)
     return S;
 }
 
-//Time Complexity:O(n)
-//Space Complexity:O(n)
