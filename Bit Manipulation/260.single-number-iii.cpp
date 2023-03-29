@@ -32,5 +32,26 @@ public:
 // Time Complexity: O(n)
 // Space Complexity: O(1)
 
+class Solution {
+public:
+    vector<int> singleNumber(vector<int>& nums) {
+         long long temp=0;
+        for(auto i :nums){
+               temp=temp^i;
+        }
+        int mask = temp^(temp&(temp-1));
 
+        int a=0;
+        for(auto i:nums){
+            if(i&mask){
+                a=a^i;
+            }
+        }
+        int b=temp^a;
+        vector<int> ans;
+        ans.push_back(a);
+        ans.push_back(b);
+        return ans;
+    }
+};
 
