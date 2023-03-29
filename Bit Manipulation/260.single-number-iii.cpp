@@ -7,27 +7,25 @@
 class Solution {
 public:
     vector<int> singleNumber(vector<int>& nums) {
-        vector<int> ans;
-        int res=0;
-        for(int i:nums){
-            res^=i;
+        int xoR = 0,n = nums.size();
+        for(int i = 0;i<n;i++) {
+            xoR ^= nums[i];
         }
-        int mask=1;
-        while((mask&res) == 0){
-            mask=mask<<1;
-        }
-        int temp=0;
-        for(int i:nums){
-            if(mask&i){
-                temp=temp^i;
-            }
-        }
-        int a=res^temp;
-        int b=res^a;
-        ans.push_back(a);
-        ans.push_back(b);
         
-        return ans; 
+        int mask = 1;
+        while(1) {
+            if((mask & xoR) == 0) {
+                mask = mask << 1;
+            }
+            else break;
+        }
+        
+        int a = 0, b = 0;
+        for(int i = 0;i<n;i++) {
+            if(nums[i] & mask) a ^= nums[i];
+            else b ^= nums[i];
+        }
+        return {a, b}; 
     }
 };
 
