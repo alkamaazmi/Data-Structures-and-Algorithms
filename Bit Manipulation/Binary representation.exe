@@ -1,0 +1,26 @@
+# 1 "C:\\Users\\Alkama Azmi\\OneDrive\\Documents\\Data-Structures-and-Algorithms\\Bit Manipulation\\Binary representation.cpp"
+# 1 "C:\\Users\\Alkama Azmi\\OneDrive\\Documents\\Data-Structures-and-Algorithms\\Bit Manipulation//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "C:\\Users\\Alkama Azmi\\OneDrive\\Documents\\Data-Structures-and-Algorithms\\Bit Manipulation\\Binary representation.cpp"
+
+
+
+
+class Solution
+{
+public:
+    string getBinaryRep(int N)
+    {
+        string s="000000000000000000000000000000";
+
+        int i=s.length()-1;
+        while(N){
+            int bit=N&1;
+            s[i]=(bit)+'0';
+            i--;
+            N=N>>1;
+        }
+        return s;
+    }
+};
