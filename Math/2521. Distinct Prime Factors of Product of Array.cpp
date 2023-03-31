@@ -13,7 +13,7 @@ public:
         for(int i=4;i<1001;i+=2){
             arr[i]=2;
         }
-        for(int i=3;i<1001;i+=2){
+        for(int i=3;i*i<1001;i+=2){
             if(arr[i]==i){
                 for(int j=i*i;j<1001;j+=i){
                     if(arr[j]==j){
