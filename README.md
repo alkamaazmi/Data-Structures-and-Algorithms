@@ -42,7 +42,12 @@ To access an array element, First the size of an element of that data type is ca
 This process takes one multiplication and one addition. Since these two operations take constant
 time, we can say the array access can be performed in constant time.
 
-----
+#### References
+
+* [Array Data Structure](https://www.geeksforgeeks.org/array-data-structure/#difflang)
+* [Top Array Coding Problems from GFG](https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/)
+* [Top Array Coding Problems from Techie Delight](https://www.techiedelight.com/huge-collection-of-array-interview-questions/)
+
 ## Linked List([Practice](https://github.com/alkamaazmi/Data-Structures-and-Algorithms/tree/main/Linked%20List))
 
 A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. The elements in a linked list are linked using pointers.They include a series of connected nodes. Here, each node stores the data and the address of the next node.
@@ -86,7 +91,13 @@ A doubly circular linked list is a linked list where each node points to its nex
 
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20220830114920/doubly-660x177.jpg)
 
----
+
+#### References
+
+* [Linked List Data Structure](https://www.geeksforgeeks.org/data-structures/linked-list/)
+* [Top Linked List Coding Problems from GFG](https://www.geeksforgeeks.org/top-20-linked-list-interview-question/)
+* [Top Linked List Coding Problems from Techie Delight](https://www.techiedelight.com/linked-list-interview-questions/)
+
 ## Stack([Practice](https://github.com/alkamaazmi/Data-Structures-and-Algorithms/tree/main/Stack))
 
 Stack is a linear data structure in which insertion and deletion are done at one end, called
