@@ -11,6 +11,7 @@
  * [Binary Search Tree](#binary-search-treepractice)
  * [Bit Manipulation](#bit-manipulationpractice)
  * [Math](#mathpractice)
+ * [C++](#c)
 -----
 ## Data structure
 
@@ -199,3 +200,7 @@ The bitwise complement inverts the bits in a single binary number.
 * [Basic Maths for Programming](https://medium.com/@sarthakagarwal147/maths-for-cp-and-dsa-c4f82f2740e1)
 
 * [Mathematical Algorithms](https://www.geeksforgeeks.org/mathematical-algorithms/)
+
+## C++
+
+* [C++ Operator Precedence](https://en.cppreference.com/w/cpp/language/operator_precedence)
